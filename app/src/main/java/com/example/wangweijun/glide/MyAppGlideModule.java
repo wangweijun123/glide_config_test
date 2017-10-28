@@ -1,4 +1,4 @@
-package com.example.wangweijun.glide_config_test;
+package com.example.wangweijun.glide;
 
 import android.content.Context;
 

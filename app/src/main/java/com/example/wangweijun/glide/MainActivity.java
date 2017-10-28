@@ -1,5 +1,6 @@
-package com.example.wangweijun.glide_config_test;
+package com.example.wangweijun.glide;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -11,10 +12,10 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.example.wangweijun.glide_config_test.model.IResponse;
-import com.example.wangweijun.glide_config_test.model.RankListModel;
-import com.example.wangweijun.glide_config_test.model.RecommendModel;
-import com.example.wangweijun.glide_config_test.network.LeHttpApi;
+import com.example.wangweijun.glide.model.IResponse;
+import com.example.wangweijun.glide.model.RankListModel;
+import com.example.wangweijun.glide.model.RecommendModel;
+import com.example.wangweijun.glide.network.LeHttpApi;
 
 import java.util.List;
 
@@ -30,6 +31,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         iv = (ImageView)findViewById(R.id.iv);
+        iv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), SecondActivity.class));
+            }
+        });
         listView  = (ListView)findViewById(R.id.lv);
         GlideApp.with(getApplicationContext())
                 .load("http://img1.dzwww.com:8080/tupian_pl/20150813/16/7858995348613407436.jpg")

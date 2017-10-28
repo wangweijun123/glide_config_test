@@ -1,4 +1,4 @@
-package com.example.wangweijun.glide_config_test.network;
+package com.example.wangweijun.glide.network;
 
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;

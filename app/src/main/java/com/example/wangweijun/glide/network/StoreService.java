@@ -1,7 +1,7 @@
-package com.example.wangweijun.glide_config_test.network;
+package com.example.wangweijun.glide.network;
 
-import com.example.wangweijun.glide_config_test.model.IResponse;
-import com.example.wangweijun.glide_config_test.model.RankListModel;
+import com.example.wangweijun.glide.model.IResponse;
+import com.example.wangweijun.glide.model.RankListModel;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

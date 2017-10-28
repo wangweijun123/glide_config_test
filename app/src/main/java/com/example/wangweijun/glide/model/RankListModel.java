@@ -1,4 +1,4 @@
-package com.example.wangweijun.glide_config_test.model;
+package com.example.wangweijun.glide.model;
 
 import java.util.List;
 

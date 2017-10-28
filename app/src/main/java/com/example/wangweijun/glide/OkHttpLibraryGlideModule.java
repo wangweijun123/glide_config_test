@@ -1,4 +1,4 @@
-package com.example.wangweijun.glide_config_test;
+package com.example.wangweijun.glide;
 
 import android.content.Context;
 
@@ -8,7 +8,7 @@ import com.bumptech.glide.annotation.GlideModule;
 import com.bumptech.glide.integration.okhttp3.OkHttpUrlLoader;
 import com.bumptech.glide.load.model.GlideUrl;
 import com.bumptech.glide.module.LibraryGlideModule;
-import com.example.wangweijun.glide_config_test.network.OkHttpUtils;
+import com.example.wangweijun.glide.network.OkHttpUtils;
 
 import java.io.InputStream;
 

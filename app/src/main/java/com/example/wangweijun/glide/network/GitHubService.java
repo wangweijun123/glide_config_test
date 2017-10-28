@@ -1,6 +1,6 @@
-package com.example.wangweijun.glide_config_test.network;
+package com.example.wangweijun.glide.network;
 
-import com.example.wangweijun.glide_config_test.model.Repo;
+import com.example.wangweijun.glide.model.Repo;
 
 import java.util.List;
 

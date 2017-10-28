@@ -1,4 +1,4 @@
-package com.example.wangweijun.glide_config_test.model;
+package com.example.wangweijun.glide.model;
 
 /**
  * Created by wangweijun on 2017/10/22.

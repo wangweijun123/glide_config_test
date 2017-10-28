@@ -1,4 +1,4 @@
-package com.example.wangweijun.glide_config_test.model;
+package com.example.wangweijun.glide.model;
 
 import java.io.Serializable;
 import java.util.List;
