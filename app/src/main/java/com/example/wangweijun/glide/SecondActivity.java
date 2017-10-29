@@ -31,9 +31,9 @@ public class SecondActivity extends Activity implements View.OnClickListener {
         bt4.setOnClickListener(this);
 
 
-        bt5 = (Button)findViewById(R.id.bt5);
+        bt5 = (Button) findViewById(R.id.bt5);
         bt5.setOnClickListener(this);
-        bt6 = (Button)findViewById(R.id.bt6);
+        bt6 = (Button) findViewById(R.id.bt6);
         bt6.setOnClickListener(this);
 
 
@@ -53,7 +53,9 @@ public class SecondActivity extends Activity implements View.OnClickListener {
 //        GlideApp.with(getApplicationContext()).load(url).thumbnail()
 
     }
+
     String url = "http://img1.dzwww.com:8080/tupian_pl/20150813/16/7858995348613407436.jpg";
+
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
@@ -74,11 +76,11 @@ public class SecondActivity extends Activity implements View.OnClickListener {
                 break;
             case R.id.bt4:
                 GlideApp.with(getApplicationContext())
-                    .load(url)
-                    .into(iv3);
+                        .load(url)
+                        .into(iv3);
                 break;
             case R.id.bt5:
-                Log.i("wang", "width:"+bt5.getWidth()+", height:"+bt5.getHeight());
+                Log.i("wang", "width:" + bt5.getWidth() + ", height:" + bt5.getHeight());
                 String gifUrl = "http://i2.mhimg.com/M00/0E/AE/CgAAilTPWJ2Aa_EIACcMxiZi5xE299.gif";
 //                String gifUrl = "http://pic2.mahua.com/M00/0E/AE/CgAAilTPWJ2Aa_EIACcMxiZi5xE299.gif";
                 GlideApp.with(getApplicationContext())
@@ -98,7 +100,7 @@ public class SecondActivity extends Activity implements View.OnClickListener {
                         .load(url)
                         .transform(new CircleCrop())
                         .into(iv3);
-            break;
+                break;
             default:
                 break;
         }
