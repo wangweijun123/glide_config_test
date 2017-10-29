@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         GlideApp.with(getApplicationContext())
                 .load("http://img1.dzwww.com:8080/tupian_pl/20150813/16/7858995348613407436.jpg")
                 .placeholder(R.mipmap.ic_launcher)
+                .override(600, 600)
                 .error(R.mipmap.error)
                 .into(iv);
 

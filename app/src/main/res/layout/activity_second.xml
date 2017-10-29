@@ -57,5 +57,17 @@
 
     </LinearLayout>
 
+    <Button
+        android:id="@+id/bt5"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_100"
+        android:textColor="#000000"
+        android:text="加载gif动画" />
 
+    <Button
+        android:id="@+id/bt6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="处理bitmap图片(圆角)" />
 </LinearLayout>

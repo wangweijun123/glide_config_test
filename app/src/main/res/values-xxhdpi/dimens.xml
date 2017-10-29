@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- S1 放大视图模式/X1放大 /MAX 1放大 -->
+
+    <dimen name="dp_50">50dp</dimen>
+    <dimen name="dp_100">200dp</dimen>
+</resources>
