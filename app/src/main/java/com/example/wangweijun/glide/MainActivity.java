@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 import com.example.wangweijun.glide.model.IResponse;
 import com.example.wangweijun.glide.model.RankListModel;
 import com.example.wangweijun.glide.model.RecommendModel;
@@ -113,6 +114,7 @@ public class MainActivity extends AppCompatActivity {
     private void setValue(ViewHolder viewHolder, RecommendModel.RankRecommedModel model) {
         viewHolder.title_view.setText(model.name);
         GlideApp.with(getApplicationContext()).load(model.icon.url)
+                .transition(new DrawableTransitionOptions().crossFade(200))
                 .placeholder(R.mipmap.ic_launcher)
                 .into(viewHolder.photo_view);
     }

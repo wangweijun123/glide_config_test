@@ -37,4 +37,30 @@ imageview 大小， 下载过来的图片大小
 glide 的图片加载与activity,fragment生命周期相关
 
 
+glide {总结}
+
+1, google 推荐使用的图片加载库，应用到google开源项目
+2, glide 滑行的意思,列表滑动的时候加载流畅
+3,  glide vs square公司的picasso
+4,  图片加载与activity生命周期相关，onPause 暂停加载，onresume重新加载
+5,  占位图设置， error
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

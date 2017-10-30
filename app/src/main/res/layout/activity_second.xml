@@ -69,5 +69,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#000000"
-        android:text="处理bitmap图片(圆角)" />
+        android:text="处理bitmap图片(圆型头像)" />
+
+    <Button
+        android:id="@+id/bt7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="处理bitmap图片(圆角图片)" />
 </LinearLayout>

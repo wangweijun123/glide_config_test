@@ -15,7 +15,7 @@ import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
  */
 
 public class SecondActivity extends Activity implements View.OnClickListener {
-    Button bt1, bt3, bt4, bt5, bt6;
+    Button bt1, bt3, bt4, bt5, bt6,bt7;
     ImageView iv1, iv2, iv3;
 
     @Override
@@ -35,6 +35,8 @@ public class SecondActivity extends Activity implements View.OnClickListener {
         bt5.setOnClickListener(this);
         bt6 = (Button) findViewById(R.id.bt6);
         bt6.setOnClickListener(this);
+        bt7 = (Button) findViewById(R.id.bt7);
+        bt7.setOnClickListener(this);
 
 
         iv1 = (ImageView) findViewById(R.id.iv1);
@@ -99,6 +101,12 @@ public class SecondActivity extends Activity implements View.OnClickListener {
                 GlideApp.with(getApplicationContext())
                         .load(url)
                         .transform(new CircleCrop())
+                        .into(iv3);
+                break;
+            case R.id.bt7:
+                GlideApp.with(getApplicationContext())
+                        .load(url)
+                        .transform(new ToundedCornerTransformation())
                         .into(iv3);
                 break;
             default:
