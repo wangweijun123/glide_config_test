@@ -105,7 +105,6 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 viewHolder = (ViewHolder)convertView.getTag();
             }
-
             setValue(viewHolder, list.get(i));
             return convertView;
         }

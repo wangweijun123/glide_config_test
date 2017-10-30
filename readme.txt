@@ -43,7 +43,9 @@ glide {总结}
 2, glide 滑行的意思,列表滑动的时候加载流畅
 3,  glide vs square公司的picasso
 4,  图片加载与activity生命周期相关，onPause 暂停加载，onresume重新加载
-5,  占位图设置， error
+5,  占位图设置， error,
+6, 图片裁剪，缓存(内存与磁盘)动画, gif
+7, glide 与 volley,okhttp 集成
 
 
 
