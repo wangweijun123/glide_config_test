@@ -23,6 +23,8 @@ public class SecondActivity extends Activity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
+        Log.i("wang", "SecondActivity");
+
         bt1 = (Button) findViewById(R.id.bt1);
         bt1.setOnClickListener(this);
         bt3 = (Button) findViewById(R.id.bt3);

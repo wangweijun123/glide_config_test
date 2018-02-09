@@ -31,6 +31,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Log.i("wang", "xxxx");
+        Log.i("wang", "xxxx");
+        Log.i("wang", "xxxx");
+
         iv = (ImageView)findViewById(R.id.iv);
         iv.setOnClickListener(new View.OnClickListener() {
             @Override
