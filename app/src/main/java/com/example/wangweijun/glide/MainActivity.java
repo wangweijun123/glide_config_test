@@ -12,7 +12,6 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 import com.example.wangweijun.glide.model.IResponse;
 import com.example.wangweijun.glide.model.RankListModel;
 import com.example.wangweijun.glide.model.RecommendModel;
@@ -44,12 +43,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         listView  = (ListView)findViewById(R.id.lv);
-        GlideApp.with(getApplicationContext())
-                .load("http://img1.dzwww.com:8080/tupian_pl/20150813/16/7858995348613407436.jpg")
-                .placeholder(R.mipmap.ic_launcher)
-                .override(600, 600)
-                .error(R.mipmap.error)
-                .into(iv);
+//        GlideApp.with(getApplicationContext())
+//                .load("http://img1.dzwww.com:8080/tupian_pl/20150813/16/7858995348613407436.jpg")
+//                .placeholder(R.mipmap.ic_launcher)
+//                .override(600, 600)
+//                .error(R.mipmap.error)
+//                .into(iv);
 
         Callback<IResponse<RankListModel>> callback = new Callback<IResponse<RankListModel>>() {
             @Override
@@ -118,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
     private void setValue(ViewHolder viewHolder, RecommendModel.RankRecommedModel model) {
         viewHolder.title_view.setText(model.name);
         GlideApp.with(getApplicationContext()).load(model.icon.url)
-                .transition(new DrawableTransitionOptions().crossFade(200))
+//                .transition(new DrawableTransitionOptions().crossFade(200))
                 .placeholder(R.mipmap.ic_launcher)
                 .into(viewHolder.photo_view);
     }

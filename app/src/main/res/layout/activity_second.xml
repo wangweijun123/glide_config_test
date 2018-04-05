@@ -77,4 +77,23 @@
         android:layout_height="wrap_content"
         android:textColor="#000000"
         android:text="处理bitmap图片(圆角图片)" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bt8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="先展示缩略图，然后展示原始尺寸图片，并行下载，如果原始尺寸先完成，缩略图不展示" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/iv8"/>
+    </LinearLayout>
+
 </LinearLayout>

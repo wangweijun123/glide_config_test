@@ -16,7 +16,7 @@ import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 
 public class SecondActivity extends Activity implements View.OnClickListener {
     Button bt1, bt3, bt4, bt5, bt6,bt7;
-    ImageView iv1, iv2, iv3;
+    ImageView iv1, iv2, iv3,iv8;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,14 +39,14 @@ public class SecondActivity extends Activity implements View.OnClickListener {
         bt6.setOnClickListener(this);
         bt7 = (Button) findViewById(R.id.bt7);
         bt7.setOnClickListener(this);
-
+        findViewById(R.id.bt8).setOnClickListener(this);
 
         iv1 = (ImageView) findViewById(R.id.iv1);
 
         iv2 = (ImageView) findViewById(R.id.iv2);
 
         iv3 = (ImageView) findViewById(R.id.iv3);
-
+        iv8 = (ImageView) findViewById(R.id.iv8);
 //        GlideApp.with(getApplicationContext())
 //                .load("http://img1.dzwww.com:8080/tupian_pl/20150813/16/7858995348613407436ddddddd.jpg")
 //                .placeholder(R.mipmap.ic_launcher)
@@ -59,6 +59,10 @@ public class SecondActivity extends Activity implements View.OnClickListener {
     }
 
     String url = "http://img1.dzwww.com:8080/tupian_pl/20150813/16/7858995348613407436.jpg";
+
+    // 缩略图
+    String thumbnailUrl = "http://i3.letvimg.com//lc03_iptv//201803//29//15//50//tmp21e5b0f0-d537-455d-9535-af05031bde53256.png";
+
 
     @Override
     public void onClick(View v) {
@@ -99,7 +103,6 @@ public class SecondActivity extends Activity implements View.OnClickListener {
 //                        .load(url)
 //                        .centerCrop()
 //                        .into(iv3);
-
                 GlideApp.with(getApplicationContext())
                         .load(url)
                         .transform(new CircleCrop())
@@ -107,9 +110,17 @@ public class SecondActivity extends Activity implements View.OnClickListener {
                 break;
             case R.id.bt7:
                 GlideApp.with(getApplicationContext())
+                    .load(url)
+                    .transform(new ToundedCornerTransformation())
+                    .into(iv3);
+                break;
+            case R.id.bt8:
+                GlideApp.with(getApplicationContext())
                         .load(url)
-                        .transform(new ToundedCornerTransformation())
-                        .into(iv3);
+                        .thumbnail(GlideApp.with(getApplicationContext())
+                                .load(thumbnailUrl)
+                                .override(20))
+                        .into(iv8);
                 break;
             default:
                 break;
