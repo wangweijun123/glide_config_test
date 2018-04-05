@@ -34,4 +34,10 @@ dependencies {
     compile 'com.squareup.retrofit2:retrofit:2.3.0'
     compile 'com.google.code.gson:gson:2.8.0'
 
+    compile "com.android.support:recyclerview-v7:25.+"
+    compile ("com.github.bumptech.glide:recyclerview-integration:4.6.1") {
+        // Excludes the support library because it's already included by Glide.
+        transitive = false
+    }
+
 }

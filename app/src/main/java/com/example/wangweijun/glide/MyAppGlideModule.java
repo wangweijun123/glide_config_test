@@ -6,7 +6,6 @@ import android.util.Log;
 import com.bumptech.glide.GlideBuilder;
 import com.bumptech.glide.annotation.GlideModule;
 import com.bumptech.glide.load.engine.cache.ExternalCacheDiskCacheFactory;
-import com.bumptech.glide.load.engine.cache.LruResourceCache;
 import com.bumptech.glide.module.AppGlideModule;
 
 /**
@@ -19,8 +18,8 @@ public class MyAppGlideModule extends AppGlideModule {
     @Override
     public void applyOptions(Context context, GlideBuilder builder) {
         // 内存缓存
-        int memoryCacheSizeBytes = 1024 * 1024 * 20; // 20mb
-        builder.setMemoryCache(new LruResourceCache(memoryCacheSizeBytes));
+//        int memoryCacheSizeBytes = 1024 * 1024 * 20; // 20mb
+//        builder.setMemoryCache(new LruResourceCache(memoryCacheSizeBytes));
 
         // 磁盘缓存,默认磁盘大小为250 MB
 

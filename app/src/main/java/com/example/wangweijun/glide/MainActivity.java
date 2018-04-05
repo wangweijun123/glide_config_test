@@ -73,6 +73,10 @@ public class MainActivity extends AppCompatActivity {
         LeHttpApi.doGetAsync(callback);
     }
 
+    public void gallery(View v) {
+        startActivity(new Intent(getApplicationContext(), com.bumptech.glide.samples.gallery.MainActivity.class));
+    }
+
 
     class Mydapter extends BaseAdapter {
         List<RecommendModel.RankRecommedModel> list;
